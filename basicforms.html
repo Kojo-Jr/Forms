@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Forms</title>
+    <style>
+        form {
+            float: ;
+        }
+    </style>
+</head>
+<body>
+    <Form>
+        <fieldset>
+            <legend>Please fill this from</legend>
+            <label>Username</label><br/>
+            <input type="text" name="Username" placeholder=""><br/><br/>
+            <label>Other Names</label><br/>
+            <input type="text" name="Other_names" placeholder=""><br/><br/>
+            <label>Password</label><br/>
+            <input type="text" name="password" placeholder="Enter Password" required><br/><br/>
+            <label>Level: </label><br/>
+            <select>
+                <option value="--Select level--" disabled selected>--Select level--</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="300">300</option>
+                <option value="400">400</option>
+            </select><br/><br/>
+            <label>Gender: </label>
+            <input type="radio" name="gender" value="M">Male
+            <input type="radio" name="gender" value="F">Female<br/><br/>
+            <label>Email: </label><br/>
+            <input type="text" name="Email" placeholder="Enter your Email" required><br/>
+            <br/>
+            <label>Date of Birth</label><br/>
+            <input type="date" name="dob"><br/><br/>
+            <label>Courses: </label>
+            <input type="checkbox" name="courses" value="HTML">HTML
+            <input type="checkbox" name="courses" value="css">css
+            <input type="checkbox" name="courses" value="JavaScript">JavaScript
+            <input type="checkbox" name="courses" value="MySQL">MySQL <br/><br/>
+            <label>Address: </label><br/>
+            <textarea name="address" rows="3"></textarea>
+        </fieldset>
+        <br/>
+        <input type="reset" name="reset" value="Reset">
+        <input type="submit" name="submit" value="submit">
+    </Form>
+</body>
+</html>

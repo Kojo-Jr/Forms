@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        header {
+            background-color: #e9e9e9;
+            overflow: hidden;
+        }
+
+        /* Header Styles*/
+
+        header > nav > ol > li > a {
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            margin-right: 20px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        header .loginform {
+            float: right;
+            margin-right: 10px;
+            
+        }
+
+        header input[type="text"], input[type="password"] {
+            padding: 3px;
+            font-size: 17px;
+            border: none;
+            width: 120px;
+            
+        }
+
+        header .loginform button {
+            padding: 3px 10px;
+            background-color:#555;
+            color: white;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+
+        header .loginform button:hover {
+            background-color: green;
+        }
+        
+        .topnav .navbar a {
+            margin-right: 20px;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .topnav .companysname {
+            float:right;
+        }
+
+
+        /* Styling the section */
+        section {
+            background-image: url(images/01.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            overflow: hidden;
+        }
+        section p {
+            font-size: 150px;
+            padding-left: 20px ;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ol>
+                <li><a href="#">Home</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Services</a>
+                    <a href="#">About</a>
+                    <div class="loginform">
+                        <form action="">
+                            <input type="text" name="Username" placeholder="Username" required>
+                            <input type="password" name="Password" placeholder="Password" required>
+                            <button type="submit">Login</button>
+                            <button type="signup">Signup</button>
+                        </form>
+                    </div>
+                </li>
+            </ol>
+        </nav>
+    </header>
+
+    <section>
+       <p>Welcome <br/> To Big Farms</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Forms</title>
+    <style type="text/css">
+        label {
+            font-size: 18px;
+            font-weight: bold;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        input[type="text"], input[type="password"], input[type="email"] {
+            background: #f1f1f1;
+            border: none;
+            padding: 10px;
+            width: 100%;
+        }
+
+        input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        input[type="reset"] {
+            background-color: #f44336;
+            font-size: 2opx;
+            color: white;
+            padding: 10px 40px;
+            cursor: pointer;
+            border: none;
+            opacity: 0.9;
+        }
+
+        input[type="reset"]:hover {
+            opacity: 1;
+        }
+
+        input[type="submit"] {
+            background-color: #22aacc;
+            color: white;
+            padding: 10px 40px;
+            cursor: pointer;
+            border: none;
+            opacity: 0.9;
+            position: relative;
+            left: 575px;
+        }
+
+        input[type="submit"]:hover {
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--the fieldset and the legend tag is placed outside the table tag-->
+    <fieldset>
+        <legend><h2>Please fill this form</h2></legend>
+
+    <table border="0" cellspacing="0px" cellpadding="10px">
+
+        <form>
+
+             <tr>
+                <td>
+                    <label>Username</label>
+                </td>
+                <td><input type="text" name="username" placeholder="Username"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>First Name</label>
+                </td>
+                <td><input type="text" name="First_Name" placeholder="Enter First Name"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Email</label>
+                </td>
+                <td><input type="email" name="email" placeholder="Enter Email"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Password</label>
+                </td>
+                <td><input type="password" name="password" placeholder="Enter Password"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Level: </label>
+                </td>
+                <td>
+                    <select>
+                        <option value="--Select level--" disabled selected>--Select level--</option>
+                        <option value="100">100</option>
+                        <option value="200">200</option>
+                        <option value="300">300</option>
+                        <option value="400">400</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Gender: </label>
+                </td>
+                <td><input type="radio" name="gender" value="M">Male
+                    <input type="radio" name="gender" value="F">Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Date of Birth: </label>
+                </td>
+                <td>
+                    <input type="date" name="dob">
+                </td>
+            </tr>   
+
+            <tr>
+                <td>
+                    <label>Courses: </label>
+                </td>
+                <td>
+                    <input type="checkbox" name="courses" value="HTML">HTML
+                     <input type="checkbox" name="courses" value="CSS">CSS
+                      <input type="checkbox" name="courses" value="JavaScript">JavaScript
+                       <input type="checkbox" name="courses" value="PHP">HTML
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Address: </label>
+                </td>
+                <td>
+                    <textarea name="address" rows="3"></textarea>
+                </td>
+            </tr>
+
+        </form>
+    </table>
+
+        <input type="reset" name="reset" value="Reset">
+        <input type="submit" name="submit" value="Save">
+
+     </fieldset>
+
+</body>
+</html>

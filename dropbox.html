@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        margin: 0;
+        position: relative;
+        contain: paint !important;
+        background-image: url(images/04.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+/* nav styles */
+    header nav {
+        padding: 15px;
+        display: flex;
+        background-color: white;
+    }
+    header nav .leftlink {
+        padding-top: 5px;
+    }
+    header nav .leftlink a {
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        font-size: 17px;
+        font-weight: ;
+        
+    }
+    header nav .leftlink button {
+        border-radius:7px;
+        background-color: white;
+        border-width: 1px;
+    }
+
+    header nav .rightlink{
+        padding-top: 10px;
+        position: relative;
+        left: 80%;
+    }
+
+    header nav .rightlink a {
+        text-decoration: none;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    
+    header nav .rightlink a:focus {
+        color: black;
+    }
+    header nav .centeredlink a {
+        position:absolute;
+        right: 50%;
+        left: 53%;
+        text-decoration: none;
+        color: black;
+        font-size: 2em;
+        font-weight: bolder;
+    }
+
+    header nav .centeredlink .logo {
+        width: 50px;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+    }
+
+    section {
+        padding: 228px;
+    }
+
+    /* Dropbox button */
+    section .trydropbox { 
+        right: 10%;
+        top: 200px;
+        position: relative;
+        padding: 20px;
+    
+    }
+    /* section .trydropbox button {
+        padding: 20px;
+        border:none;
+        border-radius: 5px;
+        margin-right: 20px;
+    }*/ 
+
+    section .trydropbox .dboxfree {
+        background-color: rgb(56, 56, 226);
+        padding: 18px;
+        border:none;
+        border-radius: 5px;
+        margin-right: 20px;
+    }
+    section .trydropbox .dboxfree a{
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    section .trydropbox .dboxbasic {
+        padding: 18px;
+        border: 1px solid rgb(56, 56, 226) ;
+        border-radius: 5px;
+        background-color: #ffffff;
+        
+    }
+
+    section .trydropbox .dboxbasic a{
+        color: rgb(56, 56, 226);
+        font-weight:normal;
+        font-size: 20px;
+        text-decoration: none;
+        
+    }
+
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="leftlink">
+                <button><a href="#">Get Dropbox Basic</a></button>
+            </div>
+            <div class="centeredlink">
+                <img class="logo" src="images/dropboxlogo.png" alt="">
+                <a href="#">Dropbox</a>
+            </div>
+            <div class="rightlink">
+                <a href="#">Compare plans</a>
+                <a href="sign-login.html">Sign in</a>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="content">
+            <p style="text-indent: 20px; position: relative;  right: 100px; font-weight:400; font-size: 50px;">Boost productivity <br>with Dropbox Business</p>
+            <p style="font-size: 20px; position: relative; right: 100px;">The secure file sharing and storage solution <br>that employees and IT admins trust</p>
+        </div>
+        <div class="trydropbox">
+            <button class="dboxfree"><a href="#">Try Dropbox Business free</a></button>
+            <button class="dboxbasic"><a href="#">Get Dropbox Basic</a></button>
+        </div>
+    </section>
+</body>
+</html>
