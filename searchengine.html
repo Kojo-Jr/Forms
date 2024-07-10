@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine</title>
+</head>
+<style>
+    /* Style for the form container */
+    .form-container{
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    /*Style for form labels*/
+    label{
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    /*Style for form inputs*/
+    input[type='text'], textarea{
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box; /* Ensure padding box does not affect width*/
+    }
+
+    /*Style for submit button*/
+    input[type='submit']{
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+    }
+
+    /*Style for the submit button on hover*/
+    input[type='submit']:hover{
+        background-color: #45a049;
+    }
+</style>
+<body>
+    <div class="form-container">
+        <form method="POST" action="add_keyword.php">
+            <label for="name">Keyword Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="description">Description:</label><br>
+            <textarea id="description" name="description"></textarea><br>
+            <input type="submit" value="Add Keyword">
+        </form>
+    </div>
+</body>
+</html>

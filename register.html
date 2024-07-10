@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<style>
+    	/* body style */
+	html, body {
+		scroll-behavior: smooth;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		/*background: whitesmoke;/*linear-gradient(to bottom, #0f0c29, #302b63, #24243e);*/
+		background-image: url(../images/04.jpg);
+		background-repeat: no repeat;
+		background-size: cover;
+		background-position: auto;
+		color: black;
+		font-family: 'Jost', sans-serif;
+	}
+
+	/* nav styles*/ 
+	/*header {
+		padding: 10px;
+		position: relative;
+		top: 0px;
+		background-color: white;
+	}
+
+	header li {
+		list-style: none;
+	}
+
+	header nav li a {
+		margin-right: 15px;
+		font-size: 20px;
+		color: #6d44b8;
+		text-decoration: none;
+
+	}
+
+	header li a:hover {
+		font-weight: 600;
+	}
+
+	header nav button {
+		float: right;
+		border: none;
+		outline:none;
+		background-color: #6d44b8;
+		border-radius: 5px;
+
+	}
+
+	header nav button a {
+		font-size: 1.5em;
+		font-weight: bolder;
+		margin-left: 15px;
+		color: white;
+		padding: 0, 5px, 5px, 0;
+	}
+
+	header nav button a:hover {
+		color: white;
+	}*/
+
+	/* style the form */
+
+
+	/*label {
+		font-size: 20px; 
+		padding: 2px;
+		font-weight: bold;
+
+	}*/   
+
+	form {
+		padding: 20px;
+	}
+
+	label {
+		display: flex;
+		justify-content: center;
+		font-weight: bold;
+		font-size: 2.3em;
+		color: #6d44b8;
+        margin: 60px;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+	}
+    
+	input[type='text'], input[type='email'], input[type='password']{
+		width: 80%;
+		height: 2vh;
+		padding: 8px;
+		display:flex;
+		justify-content: center;
+		border: none;
+		outline: none;
+		border-radius: 5px;
+        background-color: #e0dede;
+        position: relative;
+        left: 25px;;
+	}
+
+	input[type='reset'], input[type='submit'] {
+		padding: 5px;
+		width: 60%;
+		margin: 10px auto;
+		display: flex;
+		justify-content: center;
+		font-weight: bolder;
+		font-size: 1em;
+		outline: none;
+		border: none;
+		border-radius: 5px;
+		cursor:pointer;
+		color: #6d44b8;
+	}
+
+	input[type='reset']:hover, input[type='submit']:hover {
+		background: #6d44b8;
+		color: whitesmoke;
+	}
+
+	.form {
+		width: 350px;
+		height: 700px;
+		border-radius: 10px;
+		box-shadow: 5px 20px 50px #000;
+        overflow: hidden;
+	}
+
+    /*hide the checkbox */
+    #chk {
+        display: none;
+    }
+
+    /*style the signup */
+
+    .signup {
+        position: relative;
+        width: 100%;
+        height: 95%;
+    }
+
+    /*style the login*/
+
+    .login label {
+        position: relative;
+        top: -65px;
+    }
+
+    .login {
+        height: 700px;
+        background-color: #eee;
+        border-radius: 60% / 10%;
+        transform: translateY(-200px);
+        transition: .8s ease-in-out;
+        position: relative;
+        top: 25%;
+    
+    }
+
+    .login input[type='submit'] {
+        background-color: white;
+    }
+
+    .login input[type='submit']:hover {
+        background-color: #6d44b8;
+    }
+
+    .login label {
+        color: #573b8a;
+        transform: scale(.6);
+    }
+
+    /*transform the login to slide up*/
+
+    #chk:checked ~ .login{
+        transform: translateY(-400px);
+    
+    }
+
+    #chk:checked ~ .login label {
+        transform: scale(1);
+    }
+
+    #chk:checked ~ .signup label {
+        transform: scale(.6);
+    }
+
+    #chk:checked ~ .signup {
+        transform: translateY(40px); 
+        transition: 1.0s ease-in-out;
+        height: 55%;
+        /*overflow: hidden;*/
+    }
+
+
+</style>
+<body>
+    <div class="form">
+        <input type="checkbox" id="chk">
+        
+        
+        <div class="signup">
+            <form action="" method="post" autocomplete="off">
+                <label for="chk">Sign Up</label>
+                <!--<label>Username: </label> <br/>-->
+                <input type="text" name="username" placeholder="username" required=""><span class="error"><?php echo $userErr; ?></span>    <br/>
+                <!--<label>First Name: </label> <br/>-->
+                <input type="text" name="firstName" placeholder="First Name" required=""><span class="error"><?php echo $firstErr; ?></span> <br/>
+                <!-- <label>Last Name: </label>-->
+                <input type="text" name="lastName" placeholder="Last Name" required=""><span class="error"><?php echo $lastErr; ?></span> <br/>
+                <!--<label>Email: </label> <br/>-->
+                <input type="email" name="email" placeholder="Enter your email" required=""><span class="error"><?php echo $emailErr; ?></span> <br/>
+                <!--<label>Password: </label> <br/>-->
+                <input type="password" name="password" placeholder="Enter your password" required=""><span class="error"><?php echo $pswErr; ?></span> <br/>
+                <br/> 
+                <input type="submit" name="submit" value="Sign Up">
+                <input type="reset" name="reset" value="Cancel">
+            </form>
+        </div>
+       
+
+
+
+    <div class="login">
+        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post" autocomplete="off">
+            <label for="chk">Log In</label>
+            <input type="email" name="email" placeholder="Enter your email" required=""><span class="error"><?php echo $emailErr; ?></span> <br/>
+            <!--<label>Password: </label> <br/>-->
+            <input type="password" name="password" placeholder="Enter your password" required=""><span class="error"><?php echo $pswErr; ?></span> <br/>
+            <br/> 
+            <input type="submit" name="submit" value="Log In">
+			<br/>
+			<br/>
+			<center style='font-size: 12px;'>Don't have an account? <a href="register.html">Click to Register</a></center>
+        </form>
+    </div>
+    </div>
+
+
+</body>
+</html>

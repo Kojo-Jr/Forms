@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIG Farms</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+</head>
+<style>
+
+    /* body style */
+    
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* nav styles */
+
+    header {
+        padding: 1px;
+    }
+    nav li {
+        list-style: none;
+    }
+    nav li a {
+        color: black;
+        font-size: 18px;
+        text-decoration: none;
+        margin-right: 20px;
+        position: relative;
+        top: 10px;
+    }
+
+    header nav li .form, #co_name {
+        float: right;
+        margin-right: 20px;
+    }
+
+    #co_name {
+        font-size: 20px;
+    }
+
+    .form {
+        padding: 2px;
+    }
+
+    /*section style*/
+
+    section {
+        padding-bottom: 5%;
+        background-image: url(images/farmland3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        
+    }
+    section .introwords {
+        text-align: center;
+        position:relative;
+        top: 40px;
+
+    }
+
+    section .introwords p {
+        font-size: 6.5em;
+        font-weight: bolder;
+        color:  rgb(255, 255, 0);
+        mix-blend-mode: hard-light;
+    }
+
+    section .introwords h3 {
+        font-size: 25px;
+        position: relative;
+        top:50px;
+        color: bisque;
+    }
+
+    section .introwords button {
+        padding: 10px 15px;
+        position: relative;
+        bottom: 80px;
+        background-color: whitesmoke;
+        border: none;
+    }
+
+    section .introwords button a {
+        color:black;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    section  button:hover {
+        background-color: #4b9c4e;
+    }
+
+    section .introwords a:hover {
+        color: white;
+    }
+    
+</style>
+<body>
+    <header>
+        <nav>
+            <ol>
+                <li>
+                    <a href="#">About Us</a>
+                    <a href="#">Projects</a>
+                    <a href="#">News</a>
+                    <a href="#">Market Intelligence</a>
+                    <a href="#" id="co_name">BIG Farms</a>
+                    <div class="form">
+                        <a href="#">Log In</a>
+                        <a href="#">Sign Up</a>
+                    </div>
+                </li>
+            </ol>
+        </nav>
+    </header>
+    <section class="intro">
+        <div class="introwords">
+            <h3>Organic farming is a win win</h3>
+            <br>
+            <p>Big Farms</p>
+            <br>
+            <br>
+            <button><a href="#Discover">Discover more</a></button>
+        </div>
+    </section>
+</body>
+</html>
